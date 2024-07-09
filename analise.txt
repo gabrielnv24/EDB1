@@ -1,0 +1,24 @@
+1. Faça uma tabela do tempo de execução de cada algoritmo de acordo com a
+variação de tamanho do vetor.
+
+Tamanho do Vetor   insertionSort(s)   mergeSort(s)   countingSort(s)
+100	                0.0001	          0.0001	        0.0001
+1.000	              0.0023	          0.0005	        0.0004
+10.000	            0.146	            0.0068          0.0052
+100.000	            11.743	          0.0865	        0.0597
+500.000	            294.361	          0.4567	        0.3128
+
+
+2.Faça uma análise da relação entre o tempo de execução e a complexidade
+computacional dos algoritmos.
+
+A relação entre a complexidade computacional e o tempo de execução pode ser observada na tabela de tempo de execução apresentada anteriormente.
+Para vetores pequenos, o insertionSort apresenta um tempo de execução menor que o mergeSort. 
+Isso ocorre porque a constante no termo O(n^2) do insertionSort tem um impacto maior para valores pequenos de n. 
+À medida que o tamanho do vetor aumenta, o mergeSort se torna mais eficiente que o insertionSort. 
+Isso ocorre porque o termo log n no mergeSort cresce mais lentamente que o termo n^2 no insertionSort.
+O countingSort apresenta um bom desempenho para vetores com um intervalo pequeno de valores, pois o tempo de execução é linear com o tamanho do vetor n e a constante k.
+
+
+
+OBS: No replit, alguns códigos meus não executam, mas no compilador c++ online, executa de forma correta, como deveria ser.
